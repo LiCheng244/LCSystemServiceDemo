@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dVl-tk-IoY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--发短信-->
+        <scene sceneID="ANU-na-LW6">
+            <objects>
+                <viewController id="87d-Hw-cpQ" customClass="MessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KYi-E4-Bxc"/>
+                        <viewControllerLayoutGuide type="bottom" id="wWW-g3-zkb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iuU-jk-mt9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNR-8h-lWg">
+                                <rect key="frame" x="26" y="104" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bL4-uk-6xK"/>
+                                </constraints>
+                                <state key="normal" title="发短信-方式1">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="EwR-4K-R02"/>
+                                    <action selector="sendMessage1:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="faB-60-5Z2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7P0-1f-6YQ">
+                                <rect key="frame" x="26" y="164" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uIq-Z8-sOg"/>
+                                </constraints>
+                                <state key="normal" title="发短信-方式2">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="V8X-fc-Pte"/>
+                                    <action selector="sendMessage2:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="bcW-kY-Y3i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7P0-1f-6YQ" firstAttribute="top" secondItem="zNR-8h-lWg" secondAttribute="bottom" constant="20" id="9OU-Oq-dmu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7P0-1f-6YQ" secondAttribute="trailing" constant="10" id="Mty-EF-JY6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zNR-8h-lWg" secondAttribute="trailing" constant="10" id="lr6-s6-PgT"/>
+                            <constraint firstItem="7P0-1f-6YQ" firstAttribute="leading" secondItem="iuU-jk-mt9" secondAttribute="leadingMargin" constant="10" id="nMI-aK-rMn"/>
+                            <constraint firstItem="zNR-8h-lWg" firstAttribute="leading" secondItem="iuU-jk-mt9" secondAttribute="leadingMargin" constant="10" id="swm-CW-nsF"/>
+                            <constraint firstItem="zNR-8h-lWg" firstAttribute="top" secondItem="KYi-E4-Bxc" secondAttribute="bottom" constant="40" id="uGu-L3-waZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="发短信" id="DGf-Kn-e2s"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LkG-Ul-enG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="-663"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L2k-7s-ZuS">
+            <objects>
+                <navigationController id="dVl-tk-IoY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0ZR-PB-VMs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OVZ-l9-Jq5" kind="relationship" relationship="rootViewController" id="vcK-lQ-LHz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZi-a5-Q0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-913" y="45"/>
+        </scene>
+        <!--打电话-->
+        <scene sceneID="Msn-d9-VDf">
+            <objects>
+                <viewController id="j6l-IA-h0F" customClass="PhoneViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z46-Sx-bjQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ocp-J0-eLE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Qu-N5-fAR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgQ-B6-Ddx">
+                                <rect key="frame" x="26" y="104" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1pY-Bh-ZvW"/>
+                                </constraints>
+                                <state key="normal" title="打电话- 方式1">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="2Vb-4t-8as"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAX-hg-l9C">
+                                <rect key="frame" x="26" y="164" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JXM-Ke-RsE"/>
+                                </constraints>
+                                <state key="normal" title="打电话- 方式2">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callPhone2:" destination="j6l-IA-h0F" eventType="touchUpInside" id="p20-ew-klF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mZ-jZ-Ttd">
+                                <rect key="frame" x="26" y="224" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rUR-Ok-j2G"/>
+                                </constraints>
+                                <state key="normal" title="打电话- 方式3">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callPhone3:" destination="j6l-IA-h0F" eventType="touchUpInside" id="VhP-od-7s9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1mZ-jZ-Ttd" firstAttribute="leading" secondItem="8Qu-N5-fAR" secondAttribute="leadingMargin" constant="10" id="BgL-lP-Av8"/>
+                            <constraint firstItem="1mZ-jZ-Ttd" firstAttribute="top" secondItem="jAX-hg-l9C" secondAttribute="bottom" constant="20" id="JIU-Hv-fL9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jAX-hg-l9C" secondAttribute="trailing" constant="10" id="NfA-Ki-U23"/>
+                            <constraint firstItem="jAX-hg-l9C" firstAttribute="top" secondItem="mgQ-B6-Ddx" secondAttribute="bottom" constant="20" id="XhC-Q5-BpA"/>
+                            <constraint firstItem="jAX-hg-l9C" firstAttribute="leading" secondItem="8Qu-N5-fAR" secondAttribute="leadingMargin" constant="10" id="dr3-Kb-Ny5"/>
+                            <constraint firstItem="mgQ-B6-Ddx" firstAttribute="leading" secondItem="8Qu-N5-fAR" secondAttribute="leadingMargin" constant="10" id="lXi-yk-RsF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1mZ-jZ-Ttd" secondAttribute="trailing" constant="10" id="nVP-ve-4VO"/>
+                            <constraint firstItem="mgQ-B6-Ddx" firstAttribute="top" secondItem="z46-Sx-bjQ" secondAttribute="bottom" constant="40" id="srr-Ft-JcZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mgQ-B6-Ddx" secondAttribute="trailing" constant="10" id="wsi-KB-jCN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="打电话" id="9Xa-5H-bD0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n3u-Pj-heN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255" y="-663"/>
+        </scene>
+        <!--发邮件-->
+        <scene sceneID="J4g-US-Y3Z">
+            <objects>
+                <viewController id="qD5-Wv-ykm" customClass="EmailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XxD-dM-nc3"/>
+                        <viewControllerLayoutGuide type="bottom" id="aI1-YP-zvO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JFM-f5-GYT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOn-9n-Wij">
+                                <rect key="frame" x="26" y="104" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7Jq-1Q-RCf"/>
+                                </constraints>
+                                <state key="normal" title="发邮件-方式1">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="ZWx-Hk-bHe"/>
+                                    <action selector="sendEmail1:" destination="qD5-Wv-ykm" eventType="touchUpInside" id="Z2g-oM-f6q"/>
+                                    <action selector="sendMessage1:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="wI4-9L-c0z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMc-Qu-aIN">
+                                <rect key="frame" x="26" y="164" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dkL-Xu-fS1"/>
+                                </constraints>
+                                <state key="normal" title="发邮件-方式1">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="7WB-pj-ZYB"/>
+                                    <action selector="sendEmail2:" destination="qD5-Wv-ykm" eventType="touchUpInside" id="4n9-CG-EIg"/>
+                                    <action selector="sendMessage1:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="Y51-8k-c2L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="gOn-9n-Wij" secondAttribute="trailing" constant="10" id="44b-fU-3mW"/>
+                            <constraint firstItem="FMc-Qu-aIN" firstAttribute="top" secondItem="gOn-9n-Wij" secondAttribute="bottom" constant="20" id="KfE-bp-Gpc"/>
+                            <constraint firstItem="gOn-9n-Wij" firstAttribute="top" secondItem="XxD-dM-nc3" secondAttribute="bottom" constant="40" id="Pnh-HE-XeE"/>
+                            <constraint firstItem="gOn-9n-Wij" firstAttribute="leading" secondItem="JFM-f5-GYT" secondAttribute="leadingMargin" constant="10" id="UWf-nd-cf0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FMc-Qu-aIN" secondAttribute="trailing" constant="10" id="iOn-7h-1LO"/>
+                            <constraint firstItem="FMc-Qu-aIN" firstAttribute="leading" secondItem="JFM-f5-GYT" secondAttribute="leadingMargin" constant="10" id="tXx-8E-z3u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="发邮件" id="frP-RL-tdt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jA-eF-Qm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1359" y="-663"/>
+        </scene>
+        <!--访问通讯录-->
+        <scene sceneID="AfJ-0A-NUY">
+            <objects>
+                <viewController id="t95-FO-W1S" customClass="AddressBookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wbb-aO-ORA"/>
+                        <viewControllerLayoutGuide type="bottom" id="3mK-0G-6c6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qPI-qn-W27">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyH-hN-xFO">
+                                <rect key="frame" x="26" y="104" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="94Y-Wq-Kjy"/>
+                                </constraints>
+                                <state key="normal" title="访问通讯录">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="EXY-vS-qtc"/>
+                                    <action selector="openAddressBook:" destination="t95-FO-W1S" eventType="touchUpInside" id="EdF-6q-EyF"/>
+                                    <action selector="sendMessage2:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="oMV-hX-Qdd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWn-sD-prm">
+                                <rect key="frame" x="26" y="164" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Lc3-pz-VQK"/>
+                                </constraints>
+                                <state key="normal" title="添加联系人">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addAddressBook:" destination="t95-FO-W1S" eventType="touchUpInside" id="zuR-z4-YgW"/>
+                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="H7h-S7-GrS"/>
+                                    <action selector="openAddressBook:" destination="t95-FO-W1S" eventType="touchUpInside" id="MIq-Y5-Cc4"/>
+                                    <action selector="sendMessage2:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="65C-qx-f1P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jWn-sD-prm" firstAttribute="top" secondItem="nyH-hN-xFO" secondAttribute="bottom" constant="20" id="GEa-2c-4Hh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nyH-hN-xFO" secondAttribute="trailing" constant="10" id="b7Q-xL-eIk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jWn-sD-prm" secondAttribute="trailing" constant="10" id="esj-pi-R7c"/>
+                            <constraint firstItem="nyH-hN-xFO" firstAttribute="leading" secondItem="qPI-qn-W27" secondAttribute="leadingMargin" constant="10" id="fQy-hW-A4G"/>
+                            <constraint firstItem="nyH-hN-xFO" firstAttribute="top" secondItem="Wbb-aO-ORA" secondAttribute="bottom" constant="40" id="hpq-6g-x3Z"/>
+                            <constraint firstItem="jWn-sD-prm" firstAttribute="leading" secondItem="qPI-qn-W27" secondAttribute="leadingMargin" constant="10" id="sGj-Nj-75W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="访问通讯录" id="tEv-vG-kqG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8r-dp-zjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1257" y="214"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vN8-Ee-S6S">
+            <objects>
+                <viewController id="OVZ-l9-Jq5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d3I-zU-lbc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zif-bx-kIP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qZO-8X-Mau">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kW1-Fb-2l7">
+                                <rect key="frame" x="26" y="104" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.52156862749999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ohh-ss-A4v"/>
+                                </constraints>
+                                <state key="normal" title="打电话">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="j6l-IA-h0F" kind="push" id="cce-0Q-wVY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK2-jh-Eg8">
+                                <rect key="frame" x="26" y="164" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.52156862749999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1Qz-DU-QhA"/>
+                                </constraints>
+                                <state key="normal" title="发短信">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="87d-Hw-cpQ" kind="push" id="k6b-Sj-F2m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xI-Pc-snv">
+                                <rect key="frame" x="26" y="224" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.52156862749999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xwo-mA-fvB"/>
+                                </constraints>
+                                <state key="normal" title="发邮件">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qD5-Wv-ykm" kind="push" id="rMA-bE-eTW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvB-4f-qlh">
+                                <rect key="frame" x="26" y="284" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.52156862749999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FrP-Fs-hbm"/>
+                                </constraints>
+                                <state key="normal" title="跳转网址">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DsZ-l7-2ak" kind="push" id="FbB-1S-gSD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2V-kS-hHv">
+                                <rect key="frame" x="26" y="344" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.52156862749999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TZr-eg-Vgp"/>
+                                </constraints>
+                                <state key="normal" title="访问通讯录">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="t95-FO-W1S" kind="push" id="kPF-3Z-tJ7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1xI-Pc-snv" firstAttribute="leading" secondItem="qZO-8X-Mau" secondAttribute="leadingMargin" constant="10" id="0EI-qf-fVy"/>
+                            <constraint firstItem="kW1-Fb-2l7" firstAttribute="top" secondItem="d3I-zU-lbc" secondAttribute="bottom" constant="40" id="0iK-qJ-Ibg"/>
+                            <constraint firstItem="fK2-jh-Eg8" firstAttribute="top" secondItem="kW1-Fb-2l7" secondAttribute="bottom" constant="20" id="1am-iu-taD"/>
+                            <constraint firstItem="fK2-jh-Eg8" firstAttribute="leading" secondItem="qZO-8X-Mau" secondAttribute="leadingMargin" constant="10" id="1dK-UN-RTf"/>
+                            <constraint firstItem="KvB-4f-qlh" firstAttribute="top" secondItem="1xI-Pc-snv" secondAttribute="bottom" constant="20" id="38k-XG-RJh"/>
+                            <constraint firstItem="W2V-kS-hHv" firstAttribute="leading" secondItem="qZO-8X-Mau" secondAttribute="leadingMargin" constant="10" id="Epw-sq-vdk"/>
+                            <constraint firstItem="1xI-Pc-snv" firstAttribute="top" secondItem="fK2-jh-Eg8" secondAttribute="bottom" constant="20" id="MUs-1J-UmR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1xI-Pc-snv" secondAttribute="trailing" constant="10" id="OMV-P4-d3j"/>
+                            <constraint firstItem="KvB-4f-qlh" firstAttribute="leading" secondItem="qZO-8X-Mau" secondAttribute="leadingMargin" constant="10" id="Y4Q-ZU-Q1g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KvB-4f-qlh" secondAttribute="trailing" constant="10" id="hho-Fn-ddS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kW1-Fb-2l7" secondAttribute="trailing" constant="10" id="nFp-Op-CyP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W2V-kS-hHv" secondAttribute="trailing" constant="10" id="onW-yx-eq2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fK2-jh-Eg8" secondAttribute="trailing" constant="10" id="q7F-oE-KLY"/>
+                            <constraint firstItem="kW1-Fb-2l7" firstAttribute="leading" secondItem="qZO-8X-Mau" secondAttribute="leadingMargin" constant="10" id="qSw-mG-gwn"/>
+                            <constraint firstItem="W2V-kS-hHv" firstAttribute="top" secondItem="KvB-4f-qlh" secondAttribute="bottom" constant="20" id="rPx-Fx-7RD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OVt-60-SGU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRW-bt-Tag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265" y="39"/>
+        </scene>
+        <!--跳转网址-->
+        <scene sceneID="R6p-ck-FM0">
+            <objects>
+                <viewController id="DsZ-l7-2ak" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FzO-DK-plU"/>
+                        <viewControllerLayoutGuide type="bottom" id="I51-8a-9JI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Op2-6H-GyW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgm-eW-ieW">
+                                <rect key="frame" x="26" y="104" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="m5G-vB-X2Q"/>
+                                </constraints>
+                                <state key="normal" title="跳转网址">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="WhQ-Zz-DLz"/>
+                                    <action selector="sendMessage2:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="mig-db-p3G"/>
+                                    <action selector="skipForWeb:" destination="DsZ-l7-2ak" eventType="touchUpInside" id="K3w-Nu-xaG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dgm-eW-ieW" firstAttribute="leading" secondItem="Op2-6H-GyW" secondAttribute="leadingMargin" constant="10" id="dP9-JP-xZr"/>
+                            <constraint firstItem="dgm-eW-ieW" firstAttribute="top" secondItem="FzO-DK-plU" secondAttribute="bottom" constant="40" id="jVm-5k-h2u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dgm-eW-ieW" secondAttribute="trailing" constant="10" id="v75-6e-JuN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="跳转网址" id="MTV-Cu-Gmj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khx-tj-nnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="214"/>
+        </scene>
+    </scenes>
+</document>
