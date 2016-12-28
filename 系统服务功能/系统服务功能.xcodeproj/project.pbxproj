@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A3008CC1E1367E4001E9230 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3008CB1E1367E4001E9230 /* SettingViewController.m */; };
 		5AA012F21E12619900BD2DCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA012F11E12619900BD2DCB /* main.m */; };
 		5AA012F51E12619900BD2DCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA012F41E12619900BD2DCB /* AppDelegate.m */; };
 		5AA012FB1E12619900BD2DCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA012F91E12619900BD2DCB /* Main.storyboard */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A3008CA1E1367E4001E9230 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		5A3008CB1E1367E4001E9230 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		5AA012ED1E12619900BD2DCB /* 系统服务功能.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "系统服务功能.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA012F11E12619900BD2DCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5AA012F31E12619900BD2DCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 				5AA0132D1E1264A500BD2DCB /* WebViewController.m */,
 				5AA0132F1E1264BA00BD2DCB /* AddressBookViewController.h */,
 				5AA013301E1264BA00BD2DCB /* AddressBookViewController.m */,
+				5A3008CA1E1367E4001E9230 /* SettingViewController.h */,
+				5A3008CB1E1367E4001E9230 /* SettingViewController.m */,
 				5AA012F91E12619900BD2DCB /* Main.storyboard */,
 				5AA012FC1E12619900BD2DCB /* Assets.xcassets */,
 				5AA012FE1E12619900BD2DCB /* LaunchScreen.storyboard */,
@@ -319,6 +324,7 @@
 				5AA013281E12649100BD2DCB /* MessageViewController.m in Sources */,
 				5AA012F21E12619900BD2DCB /* main.m in Sources */,
 				5AA013311E1264BA00BD2DCB /* AddressBookViewController.m in Sources */,
+				5A3008CC1E1367E4001E9230 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +476,7 @@
 				DEVELOPMENT_TEAM = 756Z777W2K;
 				INFOPLIST_FILE = "系统服务功能/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "window.------";
+				PRODUCT_BUNDLE_IDENTIFIER = LiCheng.BSBDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -482,7 +488,7 @@
 				DEVELOPMENT_TEAM = 756Z777W2K;
 				INFOPLIST_FILE = "系统服务功能/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "window.------";
+				PRODUCT_BUNDLE_IDENTIFIER = LiCheng.BSBDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -556,6 +562,7 @@
 				5AA0131C1E12619900BD2DCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AA0131D1E12619900BD2DCB /* Build configuration list for PBXNativeTarget "系统服务功能Tests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +571,7 @@
 				5AA0131F1E12619900BD2DCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AA013201E12619900BD2DCB /* Build configuration list for PBXNativeTarget "系统服务功能UITests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +580,7 @@
 				5AA013221E12619900BD2DCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

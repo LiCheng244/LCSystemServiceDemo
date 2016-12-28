@@ -32,7 +32,6 @@
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="EwR-4K-R02"/>
                                     <action selector="sendMessage1:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="faB-60-5Z2"/>
                                 </connections>
                             </button>
@@ -46,7 +45,6 @@
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="V8X-fc-Pte"/>
                                     <action selector="sendMessage2:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="bcW-kY-Y3i"/>
                                 </connections>
                             </button>
@@ -176,9 +174,7 @@
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="ZWx-Hk-bHe"/>
                                     <action selector="sendEmail1:" destination="qD5-Wv-ykm" eventType="touchUpInside" id="Z2g-oM-f6q"/>
-                                    <action selector="sendMessage1:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="wI4-9L-c0z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMc-Qu-aIN">
@@ -191,9 +187,7 @@
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="7WB-pj-ZYB"/>
                                     <action selector="sendEmail2:" destination="qD5-Wv-ykm" eventType="touchUpInside" id="4n9-CG-EIg"/>
-                                    <action selector="sendMessage1:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="Y51-8k-c2L"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -235,9 +229,7 @@
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="EXY-vS-qtc"/>
                                     <action selector="openAddressBook:" destination="t95-FO-W1S" eventType="touchUpInside" id="EdF-6q-EyF"/>
-                                    <action selector="sendMessage2:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="oMV-hX-Qdd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWn-sD-prm">
@@ -251,9 +243,6 @@
                                 </state>
                                 <connections>
                                     <action selector="addAddressBook:" destination="t95-FO-W1S" eventType="touchUpInside" id="zuR-z4-YgW"/>
-                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="H7h-S7-GrS"/>
-                                    <action selector="openAddressBook:" destination="t95-FO-W1S" eventType="touchUpInside" id="MIq-Y5-Cc4"/>
-                                    <action selector="sendMessage2:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="65C-qx-f1P"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -271,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J8r-dp-zjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1257" y="214"/>
+            <point key="canvasLocation" x="1358" y="0.0"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vN8-Ee-S6S">
@@ -350,6 +339,19 @@
                                     <segue destination="t95-FO-W1S" kind="push" id="kPF-3Z-tJ7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaP-Xn-HPu">
+                                <rect key="frame" x="26" y="404" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.52156862749999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ztW-hv-hhX"/>
+                                </constraints>
+                                <state key="normal" title="跳转到设置界面">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sbJ-T5-k7e" kind="push" id="XUS-Av-BBa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -362,11 +364,14 @@
                             <constraint firstItem="1xI-Pc-snv" firstAttribute="top" secondItem="fK2-jh-Eg8" secondAttribute="bottom" constant="20" id="MUs-1J-UmR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1xI-Pc-snv" secondAttribute="trailing" constant="10" id="OMV-P4-d3j"/>
                             <constraint firstItem="KvB-4f-qlh" firstAttribute="leading" secondItem="qZO-8X-Mau" secondAttribute="leadingMargin" constant="10" id="Y4Q-ZU-Q1g"/>
+                            <constraint firstItem="YaP-Xn-HPu" firstAttribute="top" secondItem="W2V-kS-hHv" secondAttribute="bottom" constant="20" id="g0u-px-RV4"/>
+                            <constraint firstItem="YaP-Xn-HPu" firstAttribute="leading" secondItem="qZO-8X-Mau" secondAttribute="leadingMargin" constant="10" id="gMf-R9-46F"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KvB-4f-qlh" secondAttribute="trailing" constant="10" id="hho-Fn-ddS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kW1-Fb-2l7" secondAttribute="trailing" constant="10" id="nFp-Op-CyP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="W2V-kS-hHv" secondAttribute="trailing" constant="10" id="onW-yx-eq2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fK2-jh-Eg8" secondAttribute="trailing" constant="10" id="q7F-oE-KLY"/>
                             <constraint firstItem="kW1-Fb-2l7" firstAttribute="leading" secondItem="qZO-8X-Mau" secondAttribute="leadingMargin" constant="10" id="qSw-mG-gwn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YaP-Xn-HPu" secondAttribute="trailing" constant="10" id="qhl-Hu-S2r"/>
                             <constraint firstItem="W2V-kS-hHv" firstAttribute="top" secondItem="KvB-4f-qlh" secondAttribute="bottom" constant="20" id="rPx-Fx-7RD"/>
                         </constraints>
                     </view>
@@ -398,7 +403,6 @@
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="callPhone1:" destination="j6l-IA-h0F" eventType="touchUpInside" id="WhQ-Zz-DLz"/>
                                     <action selector="sendMessage2:" destination="87d-Hw-cpQ" eventType="touchUpInside" id="mig-db-p3G"/>
                                     <action selector="skipForWeb:" destination="DsZ-l7-2ak" eventType="touchUpInside" id="K3w-Nu-xaG"/>
                                 </connections>
@@ -415,7 +419,174 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khx-tj-nnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="214"/>
+            <point key="canvasLocation" x="558" y="0.0"/>
+        </scene>
+        <!--设置界面-->
+        <scene sceneID="XCS-Lv-9ds">
+            <objects>
+                <viewController id="sbJ-T5-k7e" customClass="SettingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="leY-28-1cG"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZND-L8-mZW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KGw-BG-Doq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZg-0J-cwM">
+                                <rect key="frame" x="26" y="104" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="wZy-NT-kDH"/>
+                                </constraints>
+                                <state key="normal" title="设置定位">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingLoaction:" destination="sbJ-T5-k7e" eventType="touchUpInside" id="Kjq-cZ-dzr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwI-Jo-otK">
+                                <rect key="frame" x="26" y="154" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QZg-Y3-kUy"/>
+                                </constraints>
+                                <state key="normal" title="照片">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingPhotos:" destination="sbJ-T5-k7e" eventType="touchUpInside" id="kKc-me-nOy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a68-kd-qbd">
+                                <rect key="frame" x="26" y="354" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lCc-PR-BUT"/>
+                                </constraints>
+                                <state key="normal" title="设置蓝牙">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingBluetooth:" destination="sbJ-T5-k7e" eventType="touchUpInside" id="oro-pQ-i4j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxO-6X-xJC">
+                                <rect key="frame" x="26" y="404" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="a1V-HZ-Sy3"/>
+                                </constraints>
+                                <state key="normal" title="设置通知">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingNotice:" destination="sbJ-T5-k7e" eventType="touchUpInside" id="qeb-Q2-IyN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beX-aA-GEG">
+                                <rect key="frame" x="26" y="304" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uBp-Gj-LYO"/>
+                                </constraints>
+                                <state key="normal" title="设置wifi">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingWiFi:" destination="sbJ-T5-k7e" eventType="touchUpInside" id="pQl-aX-jcs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLc-9A-CxA">
+                                <rect key="frame" x="26" y="254" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="msx-9s-qhk"/>
+                                </constraints>
+                                <state key="normal" title="设置壁纸">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingWallpaper:" destination="sbJ-T5-k7e" eventType="touchUpInside" id="D5g-Gq-9EP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCe-if-nbq">
+                                <rect key="frame" x="26" y="204" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tWZ-Ck-K4f"/>
+                                </constraints>
+                                <state key="normal" title="设置网络">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingNetwork:" destination="sbJ-T5-k7e" eventType="touchUpInside" id="iec-uZ-dmu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVK-l1-PeS">
+                                <rect key="frame" x="26" y="454" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KT0-Qs-iLj"/>
+                                </constraints>
+                                <state key="normal" title="音乐音量控制">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingVolume:" destination="sbJ-T5-k7e" eventType="touchUpInside" id="F5L-hM-BHD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSb-S1-kr0">
+                                <rect key="frame" x="26" y="534" width="323" height="40"/>
+                                <color key="backgroundColor" red="0.897883184" green="0.78253799999999996" blue="0.68669170489999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="upE-fv-iAF"/>
+                                </constraints>
+                                <state key="normal" title="iOS 10 跳转到设置界面">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingClick:" destination="sbJ-T5-k7e" eventType="touchUpInside" id="X3f-H3-4qq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aZg-0J-cwM" firstAttribute="top" secondItem="leY-28-1cG" secondAttribute="bottom" constant="40" id="B9T-Is-OH2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NCe-if-nbq" secondAttribute="trailing" constant="10" id="BHZ-2L-wRI"/>
+                            <constraint firstItem="NCe-if-nbq" firstAttribute="top" secondItem="zwI-Jo-otK" secondAttribute="bottom" constant="10" id="Bey-Ez-tMM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kVK-l1-PeS" secondAttribute="trailing" constant="10" id="CcW-gj-Eje"/>
+                            <constraint firstItem="kVK-l1-PeS" firstAttribute="top" secondItem="kxO-6X-xJC" secondAttribute="bottom" constant="10" id="FYi-uT-qkH"/>
+                            <constraint firstItem="a68-kd-qbd" firstAttribute="leading" secondItem="KGw-BG-Doq" secondAttribute="leadingMargin" constant="10" id="HmG-N4-xdr"/>
+                            <constraint firstItem="beX-aA-GEG" firstAttribute="top" secondItem="mLc-9A-CxA" secondAttribute="bottom" constant="10" id="IwW-Pb-XpB"/>
+                            <constraint firstItem="mLc-9A-CxA" firstAttribute="leading" secondItem="KGw-BG-Doq" secondAttribute="leadingMargin" constant="10" id="J5K-Ml-4DS"/>
+                            <constraint firstItem="a68-kd-qbd" firstAttribute="top" secondItem="beX-aA-GEG" secondAttribute="bottom" constant="10" id="Jn5-DA-Jda"/>
+                            <constraint firstItem="beX-aA-GEG" firstAttribute="leading" secondItem="KGw-BG-Doq" secondAttribute="leadingMargin" constant="10" id="L2C-Xq-WgB"/>
+                            <constraint firstItem="zwI-Jo-otK" firstAttribute="leading" secondItem="KGw-BG-Doq" secondAttribute="leadingMargin" constant="10" id="LF1-cg-Je4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kxO-6X-xJC" secondAttribute="trailing" constant="10" id="LVm-oZ-OOm"/>
+                            <constraint firstItem="kxO-6X-xJC" firstAttribute="top" secondItem="a68-kd-qbd" secondAttribute="bottom" constant="10" id="NNR-YD-rCh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mLc-9A-CxA" secondAttribute="trailing" constant="10" id="Pu6-l1-8S3"/>
+                            <constraint firstItem="NCe-if-nbq" firstAttribute="leading" secondItem="KGw-BG-Doq" secondAttribute="leadingMargin" constant="10" id="PxF-uU-vu0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hSb-S1-kr0" secondAttribute="trailing" constant="10" id="VR4-ek-B8e"/>
+                            <constraint firstItem="kVK-l1-PeS" firstAttribute="leading" secondItem="KGw-BG-Doq" secondAttribute="leadingMargin" constant="10" id="a4W-vp-ncp"/>
+                            <constraint firstItem="aZg-0J-cwM" firstAttribute="leading" secondItem="KGw-BG-Doq" secondAttribute="leadingMargin" constant="10" id="cv5-ku-lw2"/>
+                            <constraint firstItem="mLc-9A-CxA" firstAttribute="top" secondItem="NCe-if-nbq" secondAttribute="bottom" constant="10" id="gqW-ol-e3p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a68-kd-qbd" secondAttribute="trailing" constant="10" id="i4N-cZ-dIh"/>
+                            <constraint firstItem="kxO-6X-xJC" firstAttribute="leading" secondItem="KGw-BG-Doq" secondAttribute="leadingMargin" constant="10" id="kh5-hE-26T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aZg-0J-cwM" secondAttribute="trailing" constant="10" id="nAQ-wX-4BX"/>
+                            <constraint firstItem="hSb-S1-kr0" firstAttribute="top" secondItem="kVK-l1-PeS" secondAttribute="bottom" constant="40" id="nRJ-Kc-Com"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="beX-aA-GEG" secondAttribute="trailing" constant="10" id="njw-Jk-aqK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zwI-Jo-otK" secondAttribute="trailing" constant="10" id="r2S-yc-Qrk"/>
+                            <constraint firstItem="zwI-Jo-otK" firstAttribute="top" secondItem="aZg-0J-cwM" secondAttribute="bottom" constant="10" id="tES-Ia-3Bk"/>
+                            <constraint firstItem="hSb-S1-kr0" firstAttribute="leading" secondItem="KGw-BG-Doq" secondAttribute="leadingMargin" constant="10" id="vU9-2d-ipr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="设置界面" id="QiI-Hr-xtk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMo-tJ-ziL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="680"/>
         </scene>
     </scenes>
 </document>
